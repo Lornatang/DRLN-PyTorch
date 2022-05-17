@@ -85,7 +85,6 @@ def tensor2image(tensor: torch.Tensor, range_norm: bool, half: bool) -> Any:
     return image
 
 
-# Code reference `https://github.com/xinntao/BasicSR/blob/master/basicsr/utils/matlab_functions.py`
 def _cubic(x: Any) -> Any:
     """Implementation of `cubic` function in Matlab under Python language.
 
@@ -104,7 +103,6 @@ def _cubic(x: Any) -> Any:
                ((absx > 1) * (absx <= 2)).type_as(absx))
 
 
-# Code reference `https://github.com/xinntao/BasicSR/blob/master/basicsr/utils/matlab_functions.py`
 def _calculate_weights_indices(in_length: int,
                                out_length: int,
                                scale: float,
@@ -182,7 +180,6 @@ def _calculate_weights_indices(in_length: int,
     return weights, indices, int(sym_len_s), int(sym_len_e)
 
 
-# Code reference `https://github.com/xinntao/BasicSR/blob/master/basicsr/utils/matlab_functions.py`
 def image_resize(image: Any, scale_factor: float, antialiasing: bool = True) -> Any:
     """Implementation of `imresize` function in Matlab under Python language.
 
