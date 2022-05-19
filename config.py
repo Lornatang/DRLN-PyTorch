@@ -45,7 +45,6 @@ if mode == "train":
     num_workers = 4
 
     # Incremental training and migration training
-    start_epoch = 0
     resume = ""
 
     # Total num epochs

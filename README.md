@@ -37,24 +37,23 @@ Please refer to `README.md` in the `data` directory for the method of making a d
 
 Modify the contents of the `config.py` file as follows.
 
-- line 31: `upscale_factor` change to the magnification you need to enlarge.
-- line 33: `mode` change Set to valid mode.
-- line 71: `model_path` change weight address after training.
+- line 31: `upscale_factor` change to `2`.
+- line 33: `mode` change to `valid`.
+- line 70: `model_path` change to `results/pretrained_models/DBPN-RES-MR64-3_x2-DIV2K-e604aa23.pth.tar`.
 
 ## Train
 
 Modify the contents of the `config.py` file as follows.
 
-- line 31: `upscale_factor` change to the magnification you need to enlarge.
-- line 33: `mode` change Set to train mode.
-
-If you want to load weights that you've trained before, modify the contents of the file as follows.
+- line 31: `upscale_factor` change to `2`.
+- line 33: `mode` change to `train`.
 
 ## Resume train
 
+If you want to load weights that you've trained before, modify the contents of the file as follows.
 Modify the contents of the `config.py` file as follows.
 
-- line 49: `resume` change to SRResNet weight address that needs to be loaded.
+- line 48: `resume` change to `samples/DRLN_BIX2/epoch_xxx.pth.tar`.
 
 ## Result
 
