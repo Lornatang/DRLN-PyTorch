@@ -96,8 +96,6 @@ def main() -> None:
         psnr_metrics += psnr(sr_tensor, hr_tensor).item()
         ssim_metrics += ssim(sr_tensor, hr_tensor).item()
 
-        print(psnr_metrics)
-
     # Calculate the average value of the sharpness evaluation index,
     # and all index range values are cut according to the following values
     # PSNR range value is 0~100
