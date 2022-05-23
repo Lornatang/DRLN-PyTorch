@@ -67,4 +67,4 @@ if mode == "valid":
     sr_dir = f"results/test/{exp_name}"
     hr_dir = f"data/Set5/GTmod12"
 
-    model_path = f"results/{exp_name}/best.pth.tar"
+    model_path = "results/pretrained_models/DRLN_BIX2-DIV2K-5346a619.pth.tar"
