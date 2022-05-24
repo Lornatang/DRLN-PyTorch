@@ -11,9 +11,10 @@ This repository contains an op-for-op PyTorch reimplementation of [Densely Resid
     - [Table of contents](#table-of-contents)
     - [Download weights](#download-weights)
     - [Download datasets](#download-datasets)
-    - [Test](#test)
-    - [Train](#train)
-    - [Resume train](#resume-train)
+    - [How Test and Train](#how-test-and-train)
+        - [Test](#test)
+        - [Train model](#train-model)
+        - [Resume train model](#resume-train-model)
     - [Result](#result)
     - [Contributing](#contributing)
     - [Credit](#credit)
@@ -33,26 +34,27 @@ Contains DIV2K, DIV8K, Flickr2K, OST, T91, Set5, Set14, BSDS100 and BSDS200, etc
 
 Please refer to `README.md` in the `data` directory for the method of making a dataset.
 
-## Test
+## How Test and Train
 
-Modify the contents of the `config.py` file as follows.
+Both training and testing only need to modify the `config.py` file. 
+
+### Test
 
 - line 31: `upscale_factor` change to `2`.
 - line 33: `mode` change to `valid`.
 - line 70: `model_path` change to `results/pretrained_models/DRLN_BIX2-DIV2K-5346a619.pth.tar`.
 
-## Train
-
-Modify the contents of the `config.py` file as follows.
+### Train model
 
 - line 31: `upscale_factor` change to `2`.
 - line 33: `mode` change to `train`.
+- line 35: `exp_name` change to `DRLN_BIX2`.
 
-## Resume train
+### Resume train model
 
-If you want to load weights that you've trained before, modify the contents of the file as follows.
-Modify the contents of the `config.py` file as follows.
-
+- line 31: `upscale_factor` change to `2`.
+- line 33: `mode` change to `train`.
+- line 35: `exp_name` change to `DRLN_BIX2`.
 - line 48: `resume` change to `samples/DRLN_BIX2/epoch_xxx.pth.tar`.
 
 ## Result

@@ -22,8 +22,7 @@ from torchvision.transforms import functional as F
 
 __all__ = [
     "image2tensor", "tensor2image",
-    "image_resize",
-    "expand_y", "rgb2ycbcr", "bgr2ycbcr", "ycbcr2bgr", "ycbcr2rgb",
+    "image_resize", "expand_y", "rgb2ycbcr", "bgr2ycbcr", "ycbcr2bgr", "ycbcr2rgb",
     "rgb2ycbcr_torch", "bgr2ycbcr_torch",
     "center_crop", "random_crop", "random_rotate", "random_vertically_flip", "random_horizontally_flip",
 ]
