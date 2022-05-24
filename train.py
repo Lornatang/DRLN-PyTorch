@@ -42,7 +42,7 @@ def main():
     print("Load all datasets successfully.")
 
     model = build_model()
-    print("Build RRDBNet model successfully.")
+    print("Build DRLN model successfully.")
 
     pixel_criterion = define_loss()
     print("Define all loss functions successfully.")
