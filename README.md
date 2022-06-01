@@ -41,7 +41,7 @@ Both training and testing only need to modify the `config.py` file.
 ### Test
 
 - line 31: `upscale_factor` change to `2`.
-- line 33: `mode` change to `valid`.
+- line 33: `mode` change to `test`.
 - line 70: `model_path` change to `results/pretrained_models/DRLN_BIX2-DIV2K-5346a619.pth.tar`.
 
 ### Train model
